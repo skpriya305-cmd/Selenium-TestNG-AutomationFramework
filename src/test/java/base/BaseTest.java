@@ -6,8 +6,11 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+
+import utils.GenericUtils;
 
 
 public class BaseTest {
@@ -29,7 +32,10 @@ public class BaseTest {
 	}
 	
 	@AfterMethod
-	public void teardown() {
+	public void teardown(ITestResult result) {
+		if (ITestResult.SUCCESS == result.getStatus()) {
+	        GenericUtils.TakeScreenshot(driver, result.getName());
+	    }
 		driver.quit();
 	}
 	
