@@ -16,7 +16,6 @@
 
 
        
-<<<<<<< HEAD
        
           <dependency>
         <groupId>org.seleniumhq.selenium</groupId>
@@ -24,17 +23,6 @@
         <version>4.18.1</version>
     </dependency>
 
-=======
-    <dependencies>
-
-    <!-- Selenium -->
-    <dependency>
-        <groupId>org.seleniumhq.selenium</groupId>
-        <artifactId>selenium-java</artifactId>
-        <version>4.18.1</version>
-    </dependency>
-
->>>>>>> 13e93b585ce5c8314ec63960ccddae73c395a170
     <!-- TestNG -->
     <dependency>
         <groupId>org.testng</groupId>
@@ -43,7 +31,7 @@
         <scope>test</scope>
     </dependency>
 
-</dependencies>
+
         
   
 <!--Apache POI-->
