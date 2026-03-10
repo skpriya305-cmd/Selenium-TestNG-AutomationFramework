@@ -8,6 +8,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+<<<<<<< HEAD
+=======
+import org.testng.annotations.BeforeSuite;
+>>>>>>> 13e93b585ce5c8314ec63960ccddae73c395a170
 import org.testng.annotations.Test;
 
 public class BaseTest {
